@@ -1,0 +1,286 @@
+/* Base configuration and layout */
+/* ------------------------------------------------------ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --font: #ffffff;
+  --accent: #fcba03;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Merriweather", serif;
+  color: var(--font);
+  line-height: 1.5;
+  letter-spacing: 4px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.5rem;
+  background-image: url("../assets/pexels-sagui-andrea-200115-618833.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100dvh;
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hero__text h1 {
+  font-size: 10rem;
+  color: var(--accent);
+}
+.hero__text p {
+  font-size: 2.4rem;
+}
+.hero__arrow {
+  font-size: 10rem;
+  margin-bottom: 3rem;
+  color: var(--accent);
+}
+
+.information {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-image: url("../assets/pexels-pixabay-41004.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10rem;
+  height: 60dvh;
+}
+
+.information__heading {
+  color: var(--accent);
+  font-size: 4rem;
+  margin-right: 12rem;
+}
+.button {
+  margin-top: 2rem;
+  background-color: var(--accent);
+  padding: 2rem;
+  font-size: 1.8rem;
+  width: 15rem;
+  border: none;
+}
+
+.experience {
+  background-image: url("../assets/pexels-pixabay-207049.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.experience__header {
+  margin: 0 auto;
+  width: 60rem;
+  padding-top: 5rem;
+}
+.experience__h2 {
+  text-align: center;
+  font-size: 3.5rem;
+  color: var(--accent);
+}
+.experience__carousel {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 7rem;
+}
+.experience i {
+  font-size: 10rem;
+  color: var(--accent);
+  text-align: start;
+}
+.experience h3 {
+  font-size: 3rem;
+  margin-left: 2.5rem;
+}
+.experience__carousel__one {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  height: 50rem;
+
+  background-image: url("../assets/pexels-frans-van-heerden-201846-1537577.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.experience__carousel__two {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  height: 50rem;
+
+  background-image: url("../assets/pexels-tomas-malik-793526-27244532.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.experience__carousel__three {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  height: 50rem;
+
+  background-image: url("../assets/pexels-vika-glitter-392079-1565326.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.experience__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 4rem;
+}
+.information-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-image: url("../assets/pexels-gerhard-lipold-274371-6043062.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10rem;
+  height: 75dvh;
+  gap: 2.5rem;
+}
+.information-two h2 {
+  padding: 3rem;
+  color: var(--accent);
+  font-size: 5.5rem;
+}
+.circles {
+  background-image: url("../assets/pexels-gasparzaldo-6778798.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circles__container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 30rem;
+  flex: 1;
+  text-align: center;
+}
+.circles__container div {
+  background-color: black;
+  padding: 3.5rem;
+  border-radius: 50%;
+}
+.circles__container h3 {
+  color: var(--accent);
+  font-size: 3.4rem;
+}
+.testimony {
+  background-image: url("../assets/pexels-luca-severin-748412253-18643228.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  gap: 3.5rem;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.testimony p {
+  padding: 0 50rem;
+  text-align: center;
+}
+.testimony img {
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+}
+.gallary {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  height: 75dvh;
+}
+.gallary div {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gallary__one {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  background-image: url("../assets/pexels-emeric07-23947331.jpg");
+}
+.gallary__two {
+  background-image: url("../assets/pexels-jeremyhann-2759303.jpg");
+}
+.gallary__three {
+  background-image: url("../assets/pexels-gasparzaldo-6779117.jpg");
+}
+.gallary__four {
+  background-image: url("../assets/pexels-suomi-photography-621409-2024881.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-image: url("../assets/pexels-adi-k-182036-28909951.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10rem;
+  height: 50dvh;
+}
+.footer__col {
+  margin-right: 12rem;
+}
+.footer__col-one h2 {
+  color: var(--accent);
+  font-size: 8rem;
+}
+.footer i {
+  color: var(--accent);
+  font-size: 4rem;
+}
+.footer__col-one__email {
+  margin-bottom: 3rem;
+}
+.footer__col-two {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footer__col-two input {
+  background-color: transparent;
+  border: 1px solid white;
+  height: 4rem;
+}
+.footer__col-two input::placeholder {
+  color: var(--font);
+  font-size: 1.6rem;
+  padding: 1rem;
+  font-family: "Merriweather", serif;
+}
+.footer__col-two textarea {
+  background-color: transparent;
+  border: 1px solid white;
+  height: 20rem;
+}
+.footer__col-two textarea::placeholder {
+  color: var(--font);
+  font-size: 1.6rem;
+  padding: 1rem;
+  font-family: "Merriweather", serif;
+}
